@@ -3,8 +3,13 @@ export default function InsertPage() {
 	const insertRecord = (event) => {
 		event.preventDefault();
 		const title = document.getElementById("title").value;
-		const description = document.getElementById("description").value;
-		const data = {title, description};
+		const genre = document.getElementById("genre").value;
+		const releaseYear = document.getElementById("releaseYear").value;
+		const director = document.getElementById("director").value;
+		const cast = document.getElementById("cast").value;
+		const rating = document.getElementById("rating").value;
+		const watched = document.getElementById("watched").checked;
+		const data = {title, genre, releaseYear, director, cast, rating, watched};
 		fetch("/api/records", {
 			method: "POST",
 			headers: {
@@ -14,29 +19,73 @@ export default function InsertPage() {
 		}).then(() => {
 			console.log("New record inserted");
 			document.getElementById("title").value = "";
-			document.getElementById("description").value = "";
+			document.getElementById("genre").value = "";
+			document.getElementById("releaseYear").value = "";
+			document.getElementById("director").value = "";
+			document.getElementById("cast").value = "";
+			document.getElementById("rating").value = "";
+			document.getElementById("watched").checked = false;
 		});
 	}
 
 	return (
-		<section className="bg-white dark:bg-gray-900">
+		<section className="bg-gradient-to-b from-blue-200 to-white">
 			<div className="container px-6 py-10 mx-auto">
-				<h1 className="w-[500px] mx-auto text-center text-6xl">Fun facts app</h1>
-				<p className="w-[1000px] mx-auto text-center mt-4 text-3xl">This is an app that showcases fun facts</p>
+				<h1 className="w-[500px] mx-auto text-center text-6xl">Movie tracker</h1>
+				<p className="w-[1000px] mx-auto text-center mt-4 text-3xl">Keep track of your favorite movies</p>
 
 				<form>
 					<div className="mb-6">
-						<label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fact title</label>
+						<label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Movie title</label>
 						<input type="text" id="title"
 						       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-						       placeholder="name@flowbite.com" required/>
+						       placeholder="Enter movie title" required/>
 					</div>
 					<div className="mb-6">
-						<label htmlFor="description"
-						       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fact description</label>
-						<textarea id="description"
+						<label htmlFor="genre"
+						       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genre</label>
+						<input type="text" id="genre"
 						       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-						       required/>
+						       placeholder="Enter movie genre" required/>
+					</div>
+					<div className="mb-6">
+						<label htmlFor="releaseYear"
+						       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Release year</label>
+						<input type="number" id="releaseYear"
+						       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+						       placeholder="Enter movie release year" required/>
+					</div>
+					<div className="mb-6">
+						<label htmlFor="director"
+						       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Director</label>
+						<input type="text" id="director"
+						       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+						       placeholder="Enter movie director" required/>
+					</div>
+					<div className="mb-6">
+						<label htmlFor="cast"
+						       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cast</label>
+						<input type="text" id="cast"
+						       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+						       placeholder="Enter movie cast" required/>
+					</div>
+					<div className="mb-6">
+    					<label htmlFor="rating"
+          				 		className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rating</label>
+    					<input type="number" id="rating"
+           						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+           						placeholder="Enter movie rating" required min="0" max="10" step="0.1" />
+					</div>
+					<div className="mb-6">
+						<label htmlFor="watched"
+	       						className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Watched</label>
+								<select id="watched"
+									className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+								required>
+									<option value="">Select an option</option>
+									<option value="yes">Yes</option>
+									<option value="no">No</option>
+								</select>
 					</div>
 					<button type="submit"
 					        onClick={ insertRecord }
