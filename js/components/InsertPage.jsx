@@ -1,4 +1,6 @@
 // js/components/InsertPage.jsx
+import { useRouter } from 'next/router';
+
 export default function InsertPage() {
 	const insertRecord = (event) => {
 		event.preventDefault();
@@ -28,9 +30,19 @@ export default function InsertPage() {
 		});
 	}
 
+	const router = useRouter();
+
+	function handleClick() {
+		router.back();
+	}
+
 	return (
 		<section className="bg-gradient-to-b from-blue-200 to-white">
 			<div className="container px-6 py-10 mx-auto">
+			<button
+				className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg mr-4 text-lg"
+				onClick={handleClick}
+			>Go Back</button>
 				<h1 className="w-[500px] mx-auto text-center text-6xl">Movie tracker</h1>
 				<p className="w-[1000px] mx-auto text-center mt-4 text-3xl">Keep track of your favorite movies</p>
 
