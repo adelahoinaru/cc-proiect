@@ -14,14 +14,17 @@ Introducere:
 Scopul acestui proiect este de a permite utilizatorilor să găsească informații detaliate despre filme, cum ar fi numele, anul lansării, genul, actorii, producătorul, ratingul si dacă filmul a fost vizionat sau nu.
 Proiectul utilizează tehnologii cloud pentru a asigura scalabilitate și fiabilitate, permițând utilizatorilor să acceseze informațiile dorite cu ușurință. Acest proiect constă într-o aplicație web care oferă utilizatorilor posibilitatea de a înregistra filmele pe care le-au vizionat deja sau pe care doresc să le vizioneze în viitor.
 
+
 Descriere problemă:
 
 Aplicația are rolul de a pune la dispoziție o sursă de conținut pentru filme, care să permită utilizatorilor să adauge detalii despre acestea într-o bază de date și să le marcheze ca fiind vizionate sau nevizionate, astfel ținând evidența lor.
 De asemenea, există o componentă de chat ce poate oferi utilizatorului recomandări de filme, astfel ajutându-l să aleagă în funcție de gusturi și preferințe.
 
+
 Descriere API:
 
 API-ul utilizat pentru partea de backend este un API simplu, care permite funcționalități de get/post/delete într-o bază de date NOSQL.
+
 
 Flux de date:
 
@@ -67,6 +70,7 @@ Iar funcția de POST din cadrul serverului arată astfel:
 		return sendOk(res, result);
 	}
   
+  
 Descriere tehnologii cloud folosite:
 
 Pentru dezvoltarea proiectului, s-au utilizat următoarele tehnologii cloud:
@@ -78,6 +82,7 @@ MongoDB: o bază de date NoSQL cu scalabilitate orizontală și verticală.
 OpenAI API: un API care furnizează instrumente de inteligență artificială pentru dezvoltatori.
 
 Vercel: o platformă de cloud care oferă funcționalități de deploy și hosting pentru aplicații web.
+
 
 
 Detalii despre aplicație:
