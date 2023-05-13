@@ -17,7 +17,7 @@ const SYSTEM_PROMPTS = {
 			'content': 'You are a movie critic. You respond with recommendations and other details about movies',
 		},
 		TEMPERATURE: 1,
-		MAX_TOKENS: 100,
+		MAX_TOKENS: 500,
 		TYPE: 'michael_scott',
 	},
 };
