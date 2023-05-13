@@ -1,6 +1,6 @@
 Movie Tracker, Hoinaru Adela-Stefania, grupa 1120 
 
-Link video: 
+Link video: https://www.youtube.com/watch?v=RREd7z3_wTI
 
 Link publicare: https://github.com/adelahoinaru/cc-proiect 
 
@@ -51,7 +51,7 @@ const configuration = new Configuration({
 Răspunsul primit de la API-ul OpenAI este mai apoi afișat utilizatorului în componenta chat.
 
 
-Exemplu de request POST catre backend (Metoda HTTP de tipul POST):
+Exemplu de request POST către backend (Metoda HTTP de tipul POST):
 
 Modul de trimitere date către backend-ul nostru:
 	fetch("/api/records", {
@@ -90,7 +90,7 @@ Detalii despre aplicație:
 Aplicația este de tip SaaS (Software as a Service), oferind utilizatorilor posibilatatea de a salva filmele pe care dorește să le vizioneze.
 Aplicația propusă vine în întâmpinarea nevoii utilizatorilor de a avea o sursă centralizată de informații despre filme și posibilitatea de a gestiona aceste informații într-un mod personalizat. Utilizatorii vor putea adăuga detalii despre filme într-o bază de date, precum nume, anul lansării, genul, personajele și producătorul. De asemenea, ei vor putea marca filmele ca fiind vizionate sau nevizionate, permițându-le să țină evidența filmelor pe care le-au urmărit. Prin utilizarea tehnologiilor cloud, aplicația va fi scalabilă și va oferi o experiență fiabilă și ușor de utilizat pentru utilizatori. 
 Pagina principală a aplicației conține o listă cu toate filmele introduse de utilizatori, care pot fi vizualizate și șterse. Aceasta oferă o modalitate simplă și eficientă de a gestiona filmele generate de utilizatorii aplicației.
-De asemenea, cu ajutorul Chatbot-ului, utilizatorul poate primi recomandari detaliate de filme pe care, ulterior, le poate introduce pe pagina principală pentru a ține evidența lor.
+De asemenea, cu ajutorul ChatBot-ului, utilizatorul poate primi recomandari detaliate de filme pe care, ulterior, le poate introduce pe pagina principală pentru a ține evidența lor.
  
  ![image](https://github.com/adelahoinaru/cc-proiect/assets/91604322/a1d32be6-98e5-4808-9aa7-1ac2a200e3b5)
 
