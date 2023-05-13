@@ -87,7 +87,7 @@ Vercel: o platformă de cloud care oferă funcționalități de deploy și hosti
 
 **Detalii despre aplicație:**
 
-Aplicația este de tip SaaS (Software as a Service), oferind utilizatorilor posibilatatea de a salva filmele pe care dorește să le vizioneze.
+Aplicația este de tip SaaS (Software as a Service), oferind utilizatorului posibilatatea de a salva filmele pe care dorește să le vizioneze.
 Aplicația propusă vine în întâmpinarea nevoii utilizatorilor de a avea o sursă centralizată de informații despre filme și posibilitatea de a gestiona aceste informații într-un mod personalizat. Utilizatorii vor putea adăuga detalii despre filme într-o bază de date, precum nume, anul lansării, genul, personajele și producătorul. De asemenea, ei vor putea marca filmele ca fiind vizionate sau nevizionate, permițându-le să țină evidența filmelor pe care le-au urmărit. Prin utilizarea tehnologiilor cloud, aplicația va fi scalabilă și va oferi o experiență fiabilă și ușor de utilizat pentru utilizatori. 
 Pagina principală a aplicației conține o listă cu toate filmele introduse de utilizatori, care pot fi vizualizate și șterse. Aceasta oferă o modalitate simplă și eficientă de a gestiona filmele generate de utilizatorii aplicației.
 De asemenea, cu ajutorul ChatBot-ului, utilizatorul poate primi recomandari detaliate de filme pe care, ulterior, le poate introduce pe pagina principală pentru a ține evidența lor.
