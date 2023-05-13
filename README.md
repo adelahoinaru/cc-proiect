@@ -1,18 +1,18 @@
-Movie Tracker, Hoinaru Adela-Stefania, grupa 1120
+Movie Tracker, Hoinaru Adela-Stefania, grupa 1120 | 
 Link video: 
-Link publicare: https://github.com/adelahoinaru/cc-proiect 
-Link deploy: https://cc-proiect.vercel.app/ 
-Documentația proiectului – Movie Tracker
+Link publicare: https://github.com/adelahoinaru/cc-proiect |
+Link deploy: https://cc-proiect.vercel.app/ |
+Documentația proiectului – Movie Tracker |
 
-Introducere
+Introducere:
 Scopul acestui proiect este de a permite utilizatorilor să găsească informații detaliate despre filme, cum ar fi numele, anul lansării, genul, actorii, producătorul, ratingul si dacă filmul a fost vizionat sau nu.
 Proiectul utilizează tehnologii cloud pentru a asigura scalabilitate și fiabilitate, permițând utilizatorilor să acceseze informațiile dorite cu ușurință. Acest proiect constă într-o aplicație web care oferă utilizatorilor posibilitatea de a înregistra filmele pe care le-au vizionat deja sau pe care doresc să le vizioneze în viitor.
 
-Descriere problemă
+Descriere problemă:
 Aplicația are rolul de a pune la dispoziție o sursă de conținut pentru filme, care să permită utilizatorilor să adauge detalii despre acestea într-o bază de date și să le marcheze ca fiind vizionate sau nevizionate, astfel ținând evidența lor.
 De asemenea, există o componentă de chat ce poate oferi utilizatorului recomandări de filme, astfel ajutându-l să aleagă în funcție de gusturi și preferințe.
 
-Descriere API
+Descriere API:
 API-ul utilizat pentru partea de backend este un API simplu, care permite funcționalități de get/post/delete într-o bază de date NOSQL.
 
 Flux de date
@@ -65,6 +65,7 @@ Aplicația propusă vine în întâmpinarea nevoii utilizatorilor de a avea o su
 Pagina principală a aplicației conține o listă cu toate filmele introduse de utilizatori, care pot fi vizualizate și șterse. Aceasta oferă o modalitate simplă și eficientă de a gestiona filmele generate de utilizatorii aplicației.
 De asemenea, cu ajutorul Chatbot-ului, utilizatorul poate primi recomandari detaliate de filme pe care, ulterior, le poate introduce pe pagina principală pentru a ține evidența lor.
  
- 
+ ![image](https://github.com/adelahoinaru/cc-proiect/assets/91604322/a1d32be6-98e5-4808-9aa7-1ac2a200e3b5)
+
 
  
