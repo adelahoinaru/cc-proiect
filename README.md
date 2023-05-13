@@ -5,6 +5,7 @@ Link deploy: https://cc-proiect.vercel.app/ |
 Documentația proiectului – Movie Tracker |
 
 Introducere:
+
 Scopul acestui proiect este de a permite utilizatorilor să găsească informații detaliate despre filme, cum ar fi numele, anul lansării, genul, actorii, producătorul, ratingul si dacă filmul a fost vizionat sau nu.
 Proiectul utilizează tehnologii cloud pentru a asigura scalabilitate și fiabilitate, permițând utilizatorilor să acceseze informațiile dorite cu ușurință. Acest proiect constă într-o aplicație web care oferă utilizatorilor posibilitatea de a înregistra filmele pe care le-au vizionat deja sau pe care doresc să le vizioneze în viitor.
 
