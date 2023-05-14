@@ -10,7 +10,7 @@ export default function InsertPage() {
 		const director = document.getElementById("director").value;
 		const cast = document.getElementById("cast").value;
 		const rating = document.getElementById("rating").value;
-		const watched = document.getElementById("watched").checked;
+		const watched = document.getElementById("watched").value;
 		const data = {title, genre, releaseYear, director, cast, rating, watched};
 		fetch("/api/records", {
 			method: "POST",
@@ -26,7 +26,7 @@ export default function InsertPage() {
 			document.getElementById("director").value = "";
 			document.getElementById("cast").value = "";
 			document.getElementById("rating").value = "";
-			document.getElementById("watched").checked = false;
+			document.getElementById("watched").value = "";
 		});
 	}
 
